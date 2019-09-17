@@ -1,8 +1,11 @@
 server:
   port: 80
 
-mysql.addr=127.0.0.1
-mysql.root.pass=root
+mysql:
+  addr: 127.0.0.1
+mysql:
+  root:
+    pass: root
 
 spring:
   datasource:
