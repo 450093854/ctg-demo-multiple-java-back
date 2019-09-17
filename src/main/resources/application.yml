@@ -4,9 +4,9 @@ server:
 spring:
   datasource:
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/pipeline-test
+    url: jdbc:mysql://${MYSQL_ADDR}:3306/pipeline-test
     username: root
-    password: root
+    password: ${MYSQL_ROOT_PASS}
   redis:
     host: 127.0.0.1
     database: 0
