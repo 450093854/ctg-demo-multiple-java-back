@@ -1,18 +1,12 @@
 server:
   port: 80
 
-mysql:
-  addr: 127.0.0.1
-mysql:
-  root:
-    pass: root
-
 spring:
   datasource:
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://${mysql.addr}:3306/pipeline-test
+    url: jdbc:mysql://${mysql.host:127.0.0.1}:3306/pipeline-test
     username: root
-    password: ${mysql.root.pass}
+    password: ${mysql.pwd:root}
   redis:
     host: 127.0.0.1
     database: 0
